@@ -108,4 +108,5 @@ Para gerar o .exe podemos utilizar o comando
       <img width="252" height="173" alt="image" src="https://github.com/user-attachments/assets/7355b3c5-0858-46b5-a00e-4f7d9c76e5dd" />
 
 
-       
+
+Ainda existem pontos de acerto, melhorias a fazer e muitos testes mas no momento ainda estou desenvolvendo a ferramenta e amadurecendo a ideia.
