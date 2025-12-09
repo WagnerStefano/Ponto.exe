@@ -55,5 +55,57 @@ Após gerar, copie apenas o .exe para qualquer máquina da empresa.
       ├── ponto.py
       ├── logo.ico
       └── .venv/
+<br><br>
+# passso a passo para executar o projeto
+Dentro da pasta criada para o projeto devemos criar o .Venv
+utilizando o comando 
+
+      python -m venv .venv
+
+após sua criação precisamos ativar com o comando
+
+      .venv\Scripts\Activate.ps1
+
+Se der erro de execução, rode a linha a seguir
+
+      Set-ExecutionPolicy RemoteSigned -Scope CurrentUser
+      
+após estas execuções você pode fazer um teste com 
+
+      pip --version
+que deve retornoar a versão do Python instalada e utilizad no projeto.
+
+Com ambiente virtual ativado devemos Instalar as Dependências do projeto.
+utilizando o comando
+   
+      pip install pywin32 
+      apscheduler 
+      pystray 
+      pillow 
+      pyinstaller
+Obs: tkinter já vem no Python no Windows.
+
+Verificar se está ok com <br>
+
+      pip list
+
+Com todas essas etapas executadas e validando o funcionamento do ambiente vamos a execução do projeto.
+
+      python ponto.py
+
+Com todo ambiente funcionando e nenhum erro no código podemos partir para 
+
+# Gerando o .EXE
+
+Aqui fica um aviso de que todas as dependencias devem estar instaladas dento o Venv para que haja a correta execução. <BR>
+Para gerar o .exe podemos utilizar o comando 
+
+      pyinstaller --noconfirm --windowed --onefile --icon=logo.ico ponto.py
+
+ Que trará o diretório dist com o executavel <BR>
+ Após esta execução basta transferir o .EXE para qualquer maquina que funcionará normalmente (Assim espero :D)
+      <img width="801" height="749" alt="image" src="https://github.com/user-attachments/assets/b98d031e-5650-45bf-8e4f-0553dd1e9e2c" />
+      <img width="252" height="173" alt="image" src="https://github.com/user-attachments/assets/7355b3c5-0858-46b5-a00e-4f7d9c76e5dd" />
 
 
+       
