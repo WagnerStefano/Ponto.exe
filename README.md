@@ -9,16 +9,16 @@ aplicar o que foi aprendido.
 O objetivo principal foi eliminar erros humanos, reduzir atrasos e agilizar a rotina operacional.
 
 # Tecnologias utilizadas
-    | Tecnologia  | Uso                                  |
-    | ----------- | ------------------------------------ |
-    | Python      | Linguagem principal                  |
-    | Tkinter     | Interface gráfica                    |
-    | win32com    | Envio de e-mail via Outlook          |
-    | APScheduler | Agenda diária                        |
-    | PyInstaller | Empacotamento para .exe              |
-    | pystray     | Ícone na bandeja                     |
-    | PIL         | Ícone do app                         |
-    | winreg      | Registro de inicialização no Windows |
+    | Tecnologia  | Uso                                  | Version     |
+    | ----------- | ------------------------------------ | ----------- |
+    | Python      | Linguagem principal                  | 3.14        |
+    | Tkinter     | Interface gráfica                    |             |
+    | win32com    | Envio de e-mail via Outlook          |             |
+    | APScheduler | Agenda diária                        | 3.11.1      |
+    | PyInstaller | Empacotamento para .exe              |             |
+    | pystray     | Ícone na bandeja                     | 0.19.5      |
+    | PIL         | Ícone do app                         |             |
+    | winreg      | Registro de inicialização no Windows |             |
 
 # Funcionalidades
  Interface gráfica simples e intuitiva com Tkinter
@@ -47,3 +47,13 @@ Exemplo de comando utilizado:
 
     pyinstaller --noconfirm --windowed --onefile --icon=logo.ico Nome_Do_Arquivo.py
 Após gerar, copie apenas o .exe para qualquer máquina da empresa.
+
+# Estrutura do Projeto
+
+      ponto_monitor/.venv
+      │
+      ├── ponto.py
+      ├── logo.ico
+      └── .venv/
+
+
